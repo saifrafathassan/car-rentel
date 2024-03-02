@@ -8,13 +8,32 @@
     list-style: none;
     text-decoration: none;
     font-size: 0.875rem;
-    font-family: Rubik,sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 200;
     letter-spacing: 0.25px;
     height: 1000vh;
     width: 100%;
     background-color: #f8f8f8;
+    position: relative;
   }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    max-width: 133rem !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+  }
+
+
   .loading {
     display: flex;
     justify-content: center;
@@ -63,4 +82,5 @@
 .moblie.active {
   left: 0; 
 }
+
 }
