@@ -111,10 +111,10 @@
 .book-content__box .box-form__car-type select {
   font-size: 1.5rem;
   color: #ababab;
-  font-family: "Rubik", sans-serif;
+  font-family:  sans-serif;
   border: 1px solid #ccd7e6;
   border-radius: 3px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 1.2rem 1.3rem;
   outline: none;
 }
@@ -130,12 +130,15 @@
   color: #878585;
   padding-right: 3rem;
   border: 1px solid #ccd7e6;
+  font-size: 12px;
 }
 
 .book-content__box .box-form__car-time label {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .book-content__box .box-form__car-time label i {
@@ -245,6 +248,8 @@
   background-color: rgb(255, 255, 255);
   padding-right: 2px;
   color: #010103;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {

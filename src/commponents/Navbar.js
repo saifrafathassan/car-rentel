@@ -39,13 +39,13 @@ const scrollToTop = () => {
 
   return (
     <nav className=''>
-      <div className='navbar hidden lg:flex justify-between items-center pt-7 mx-[300px]'>
+      <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-[300px]'>
       <div className="logo">
-        <img src={Logo} alt="logo" className="h-12 w-38"/>
+        <img src={Logo} alt="logo" className="h-20 w-42"/>
       </div>
       
       <div className="links">
-        <ul className='flex space-x-4'>
+        <ul className='flex space-x-7'>
           <li><Link to='/' className='link'>Home</Link></li>
           <li><Link to='/' className='link'>About</Link></li>
           <li><Link to='/' className='link'>Vehicle Models</Link></li>
@@ -56,8 +56,8 @@ const scrollToTop = () => {
       </div>
       
       <div className="buttons flex items-center">
-        <a href="#" className="link">Sign In</a>
-        <a href="#" className="ml-4 bg-main text-white font-bold py-4 px-8 rounded shadow-xl hover:bg-red-600 transition-colors duration-300">Register</a>
+        <Link href="#" className="link">Sign In</Link>
+        <Link href="#" className="ml-4 text-[16px] bg-main text-white font-bold py-5 px-12 rounded shadow-xl hover:bg-red-600 transition-colors duration-300">Register</Link>
       </div>
       </div>
 

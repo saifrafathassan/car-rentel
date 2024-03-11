@@ -9,6 +9,7 @@ import CarPassat from "../../assets/passatcc.jpg";
 import {FaMapMarkerAlt, FaTimes, FaBars } from 'react-icons/fa'
 import { AiFillCar } from "react-icons/ai";
 import { FcCalendar } from "react-icons/fc";
+import { BsFillInfoCircleFill } from "react-icons/bs";
 
 const BookCar = () => {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -168,9 +169,9 @@ const BookCar = () => {
             <div className="book-content__box">
               <h2>Book a car</h2>
 
-              <p className="error-message">
-                All fields required! <FaTimes width={20} height={20} />
-              </p>
+                <p className="error-message">
+                  All Fields Required ! <FaTimes width={20} height={20} />
+                </p>
 
               <p className="booking-done">
                 Check your email to confirm an order.{" "}
@@ -267,12 +268,12 @@ const BookCar = () => {
         {/* title */}
         <div className="booking-modal__title">
           <h2>Complete Reservation</h2>
-          <FaTimes onClick={openModal} />
+          <FaTimes className='cursor-pointer' size={20} onClick={openModal} />
         </div>
         {/* message */}
         <div className="booking-modal__message">
-          <h4>
-            <FaBars /> Upon completing this reservation enquiry,
+          <h4 className='flex gap-3 items-center'>
+            <BsFillInfoCircleFill /> Upon completing this reservation enquiry,
             you will receive:
           </h4>
           <p>
