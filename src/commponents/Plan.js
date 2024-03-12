@@ -7,7 +7,7 @@ const Plan = () => {
   return (
     <div className='text-center plan py-24 bg-[#fff]'>
       <h2 className='text-4xl font-bold'>Plan your trip now</h2>
-      <h1 className='text-[45px] font-bold py-4'>Quick & easy car rental</h1>
+      <h1 className='text-[35px] md:text-[45px] font-bold py-4'>Quick & easy car rental</h1>
 
       <div className='cards flex flex-wrap justify-center mx-auto py-14 gap-16'>
 
