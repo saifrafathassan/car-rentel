@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../assets/logo.png'
 import _ from 'lodash';
 import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom' //useLocation add soon
 import { FaBars, FaTimes} from 'react-icons/fa'
 import { IoIosArrowUp} from 'react-icons/io'
 

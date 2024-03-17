@@ -6,7 +6,7 @@ import CarToyota from "../../assets/toyotacamry.jpg";
 import CarBmw from "../../assets/bmw320.jpg";
 import CarMercedes from "../../assets/benz.jpg";
 import CarPassat from "../../assets/passatcc.jpg";
-import {FaMapMarkerAlt, FaTimes, FaBars } from 'react-icons/fa'
+import {FaMapMarkerAlt, FaTimes } from 'react-icons/fa'
 import { AiFillCar } from "react-icons/ai";
 import { FcCalendar } from "react-icons/fc";
 import { BsFillInfoCircleFill } from "react-icons/bs";

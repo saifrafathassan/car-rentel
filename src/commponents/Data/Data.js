@@ -7,7 +7,8 @@ import Car6 from '../../assets/toyotacamry.jpg'
 
 export const data = [
     {
-        rent: $25,
+        id: 1,
+        rent: 45,
         Model: 'Audi',
         Mark: 'A1',
         image: Car2,
@@ -18,7 +19,8 @@ export const data = [
         Fuel: 'Gasoline',
     },
     {
-        rent: $37,
+        id: 2,
+        rent: 37,
         Model: 'Golf 6',
         Mark: 'Volkswagen',
         image: Car3,
@@ -29,7 +31,8 @@ export const data = [
         Fuel: 'Diesel',
     },
     {
-        rent: $30,
+        id: 3,
+        rent: 30,
         Model: 'Camry',
         Mark: 'Toyata',
         image: Car6,
@@ -40,7 +43,8 @@ export const data = [
         Fuel: 'Hybrid',
     },
     {
-        rent: $35,
+        id: 4,
+        rent: 35,
         Model: '320',
         Mark: 'BMW',
         image: Car5,
@@ -51,7 +55,8 @@ export const data = [
         Fuel: 'Diesel',
     },
     {
-        rent: $50,
+        id: 5,
+        rent: 50,
         Model: 'Benz GLK',
         Mark: 'Mercedes',
         image: Car1,
@@ -62,7 +67,8 @@ export const data = [
         Fuel: 'Diesel',
     },
     {
-        rent: $25,
+        id: 6,
+        rent: 25,
         Model: 'Passat CC',
         Mark: 'Volkswagen',
         image: Car4,
