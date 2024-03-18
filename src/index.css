@@ -33,7 +33,10 @@
     padding: 0 2.5rem !important;
   }
 
-
+  .btnactive {
+    background-color: #FF4D30 !important;
+    color: white;
+  }
 
   .loading {
     display: flex;
