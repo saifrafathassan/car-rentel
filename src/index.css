@@ -21,7 +21,14 @@
     margin: 0;
     padding: 0;
   }
-  
+  .bg-img {
+    background-color: #fff;
+    background-image: url(./assets/bg.png);
+    background-position: -225px 255px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0 10rem;
+  }
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;

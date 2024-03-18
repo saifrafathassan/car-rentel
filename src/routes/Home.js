@@ -4,6 +4,8 @@ import Hero from '../commponents/Hero'
 import BookCar from '../commponents/Book/BookCar'
 import Plan from '../commponents/Plan'
 import Vehiclemodels from '../commponents/Vehiclemodels'
+import Whyus from '../commponents/Whyus'
+import Reviewed from '../commponents/Reviewed'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <BookCar/>
       <Plan/>
       <Vehiclemodels/>
+      <Whyus/>
+      <Reviewed/>
     </div>
   )
 }
