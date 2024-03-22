@@ -90,7 +90,7 @@ const scrollToTop = () => {
       </div>
     </div>
     {showButton && (
-        <button className='bg-main flex justify-center items-center h-[60px] w-[60px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1299] hover:bg-black duration-300' onClick={scrollToTop}>
+        <button className='bg-main flex justify-center items-center h-[60px] w-[60px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1299] hover:bg-red-600 duration-300' onClick={scrollToTop}>
           <IoIosArrowUp color='white' size={25}/>
         </button>
       )}

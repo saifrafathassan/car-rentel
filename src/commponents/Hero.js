@@ -14,7 +14,7 @@ const Hero = () => {
             <h1 className='text-[60px] leading-[70px] pb-2'>Save <span className='text-main'>big</span> with our car rental</h1>
             <p className='text-[#847e7e] font-sans font-bold leading-10 py-6 text-[15px]'>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
             <div className="btn text-white lg:justify-start justify-center flex flex-wrap gap-7 py-5">
-                <button className='py-[18px] px-[30px] bg-main text-[17px] rounded-md flex items-center gap-4 shadow-xl hover:bg-primary transition-colors duration-300'>Book Ride <AiOutlineCheckCircle size={25}/></button>
+                <button className='py-[18px] px-[30px] bg-main text-[17px] rounded-md flex items-center gap-4 shadow-xl hover:bg-red-600 transition-colors duration-300'>Book Ride <AiOutlineCheckCircle size={25}/></button>
                 <button className='py-[18px] text-[17px] px-[30px] bg-black rounded-md flex items-center gap-4 shadow-xl hover:bg-white hover:text-black transition-colors duration-300'>Learn More <BiChevronRight size={25}/></button>
             </div>
         </div>

@@ -253,7 +253,7 @@ const BookCar = () => {
                   ></input>
                 </div>
 
-                <button onClick={openModal} type="submit">
+                <button className='hover:bg-red-600' onClick={openModal} type="submit">
                   Search
                 </button>
               </form>
