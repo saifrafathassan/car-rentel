@@ -21,6 +21,22 @@
     margin: 0;
     padding: 0;
   }
+
+  .div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+   }
+   .show {
+    max-height: 300px; /* Adjust the height as needed */
+  }
+
+  .FAQ {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    background-image: url('/src/assets/car.png');
+  }
   .bg-img {
     background-color: #fff;
     background-image: url(./assets/bg.png);

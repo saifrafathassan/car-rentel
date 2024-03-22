@@ -6,6 +6,7 @@ import Plan from '../commponents/Plan'
 import Vehiclemodels from '../commponents/Vehiclemodels'
 import Whyus from '../commponents/Whyus'
 import Reviewed from '../commponents/Reviewed'
+import Faq from '../commponents/Faq'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Vehiclemodels/>
       <Whyus/>
       <Reviewed/>
+      <Faq/>
     </div>
   )
 }

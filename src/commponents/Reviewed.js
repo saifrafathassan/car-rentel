@@ -1,6 +1,6 @@
 import React from 'react'
-import Man from '../assets/MAN.2.jpg'
-import Women from '../assets/WOMEN.2.jpg'
+import Man from '../assets/man.jpg'
+import Women from '../assets/women.jpg'
 import { FaQuoteRight } from "react-icons/fa";
 
 const Reviewed = () => {
