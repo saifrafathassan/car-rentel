@@ -8,8 +8,8 @@ const Reviewed = () => {
     <div className='w-full h-full bg-[#f8f8f8] py-32 mx-auto'>
       <div className="heading flex gap-5 flex-col items-center text-black w-full">
         <h2 className='text-[22px] font-bold'>Reviewed by People</h2>
-        <h1 className='text-[32px] md:text-[42px] font-extrabold'>Client's Testimonials</h1>
-        <p className='text-[#706f7b] text-[16px] md:w-[700px] text-center'>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
+        <h1 className='text-[27px] md:text-[42px] font-extrabold'>Client's Testimonials</h1>
+        <p className='text-[#706f7b] text-[16px] md:w-[700px] text-center px-5'>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
       </div>
 
       <div className="cards flex-wrap flex justify-center pt-32 gap-20">
@@ -23,7 +23,7 @@ const Reviewed = () => {
                         <h3 className='text-[18px]'>Belgrade</h3>
                     </div>
                 </div>
-                <span className='text-main'><FaQuoteRight size={35}/></span>
+                <span className='text-main sm:block hidden'><FaQuoteRight size={30}/></span>
             </div>
         </div>
         <div className="card-1 p-20 sm:px-[100px] sm:py-[40px] bg-[#fff] shadow-xl ml-5">
@@ -36,7 +36,7 @@ const Reviewed = () => {
                         <h3 className='text-[18px]'>USA</h3>
                     </div>
                 </div>
-                <span className='text-main'><FaQuoteRight size={35}/></span>
+                <span className='text-main sm:block hidden'><FaQuoteRight size={30}/></span>
             </div>
         </div>
       </div>

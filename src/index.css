@@ -11,7 +11,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     letter-spacing: 0.25px;
-    height: 1000vh;
     width: 100%;
     background-color: #f8f8f8;
     position: relative;
@@ -94,6 +93,12 @@
       background-image: none;
       display: flex;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    body {
+      margin-left: 3px;
     }
   }
 
