@@ -22,6 +22,18 @@
     padding: 0;
   }
 
+
+
+  .download-section {
+    background-image: url('/src/assets/bg02.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 10rem 0 !important;
+    width: 100%;
+  }
+
   .div {
     max-height: 0;
     overflow: hidden;
@@ -75,6 +87,14 @@
   .link:hover {
     color: #FF4D30;
     transition: all .3s;
+  }
+
+  @media screen and (max-width: 841px) {
+    .download-section {
+      background-image: none;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   @media screen and (max-width: 1600px) {

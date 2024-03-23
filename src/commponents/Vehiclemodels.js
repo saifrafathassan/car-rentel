@@ -18,7 +18,7 @@ const Vehiclemodels = () => {
       const clickedCar = data.find((car) => car.id === id);
       setActiveCar(clickedCar);
       setIsLoading(false); 
-    }, 600); 
+    }, 300); 
   };
 
   return (

@@ -7,6 +7,8 @@ import Vehiclemodels from '../commponents/Vehiclemodels'
 import Whyus from '../commponents/Whyus'
 import Reviewed from '../commponents/Reviewed'
 import Faq from '../commponents/Faq'
+import Downloadapp from '../commponents/Downloadapp'
+import Footer from '../commponents/Footer'
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <Whyus/>
       <Reviewed/>
       <Faq/>
+      <Downloadapp/>
+      <Footer/>
     </div>
   )
 }

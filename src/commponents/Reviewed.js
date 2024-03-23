@@ -6,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa";
 const Reviewed = () => {
   return (
     <div className='w-full h-full bg-[#f8f8f8] py-32 mx-auto'>
-      <div className="heading flex flex-col items-center text-black w-full">
+      <div className="heading flex gap-5 flex-col items-center text-black w-full">
         <h2 className='text-[22px] font-bold'>Reviewed by People</h2>
         <h1 className='text-[32px] md:text-[42px] font-extrabold'>Client's Testimonials</h1>
         <p className='text-[#706f7b] text-[16px] md:w-[700px] text-center'>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
