@@ -9,10 +9,12 @@ import Reviewed from '../commponents/Reviewed'
 import Faq from '../commponents/Faq'
 import Downloadapp from '../commponents/Downloadapp'
 import Footer from '../commponents/Footer'
+import LoadingComponent from './LoadingComponent'
 
 const Home = () => {
   return (
     <div>
+      <LoadingComponent/>
       <Navbar />
       <Hero/>
       <BookCar/>
@@ -23,6 +25,7 @@ const Home = () => {
       <Faq/>
       <Downloadapp/>
       <Footer/>
+      <LoadingComponent/>
     </div>
   )
 }

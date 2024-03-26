@@ -47,11 +47,11 @@ const scrollToTop = () => {
       <div className="links">
         <ul className='flex space-x-7'>
           <li><Link to='/' className='link'>Home</Link></li>
-          <li><Link to='/' className='link'>About</Link></li>
-          <li><Link to='/' className='link'>Vehicle Models</Link></li>
-          <li><Link to='/' className='link'>Testimonials</Link></li>
-          <li><Link to='/' className='link'>Our Team</Link></li>
-          <li><Link to='/' className='link'>Contact</Link></li>
+          <li><Link to='/about' className='link'>About</Link></li>
+          <li><Link to='/vehicle models' className='link'>Vehicle Models</Link></li>
+          <li><Link to='/testimonials' className='link'>Testimonials</Link></li>
+          <li><Link to='/our team' className='link'>Our Team</Link></li>
+          <li><Link to='/contact' className='link'>Contact</Link></li>
         </ul>
       </div>
       
@@ -62,11 +62,11 @@ const scrollToTop = () => {
       </div>
 
       {/* moblie menu */}
-      <div className='lg:hidden px-5'>
+      <div className='lg:hidden px-8 py-3'>
       <div className='flex justify-between items-center pt-7 w-full'>
         {/* Logo on the left */}
         <div className="logo">
-          <img src={Logo} alt="logo" className="h-12 w-38"/>
+          <img src={Logo} alt="logo" className="h-[50px] w-[150px]"/>
         </div>
 
         {/* Bars or times icon on the right */}
