@@ -6,7 +6,7 @@ import { BiChevronRight } from "react-icons/bi";
 
 const Hero = () => {
   return (
-    <div className='h-screen pb-24 overflow-hidden font-bold'>
+    <div className='h-screen pb-24 overflow-hidden font-bold pt-32'>
       <img src={Bg} alt="hero" className='hidden lg:block absolute top-0 right-0 z-[-1]'/>
       <div className='flex justify-center items-center h-full mx-auto lg:w-[1350px]'>
         <div className="lg:text-start w-[500px] text-center lg:w-[600px] md:ml-4">
