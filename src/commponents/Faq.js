@@ -27,7 +27,7 @@ const Faq = () => {
     <div className="faq flex flex-col justify-center items-center my-20">
 
       <div onClick={() => handleClick(1)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer border-b-2">
-        <div className={`flex justify-between items-center w-[30rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 1 ? 'bg-main text-white' : ''}`}>
+        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 1 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>1.What is special about comparing rental car deals? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
@@ -43,7 +43,7 @@ const Faq = () => {
       </div>
 
       <div onClick={() => handleClick(2)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer border-b-2">
-        <div className={`flex justify-between items-center w-[30rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
+        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>2.How do I find the car rental deals? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
@@ -60,12 +60,12 @@ const Faq = () => {
       </div>
 
       <div onClick={() => handleClick(3)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer ">
-        <div className={`flex justify-between items-center w-[30rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[22px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 3 ? 'bg-main text-white' : ''}`}>
+        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[22px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 3 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>3.How do I find such low rental car prices? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
         <div className={`div ${activeText === 3 ? 'show' : 'div'}`}>
-            <p className='text-[#706f7b] text-[15px] w-[30rem] sm:w-[50rem] md:w-[80rem] py-4 px-6 sm:py-[2.8rem] sm:px-[4.5rem]'>
+            <p className='text-[#706f7b] text-[15px] w-[30rem] sm:w-[50rem] md:w-[80rem] py-4 px-0 sm:py-[2.8rem] sm:px-[4.5rem]'>
             Book in advance: Booking your rental car ahead of time can
                   often result in lower prices. Compare prices from multiple
                   companies: Use websites like Kayak, Expedia, or Travelocity to
