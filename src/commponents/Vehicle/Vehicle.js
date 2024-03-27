@@ -14,7 +14,7 @@ const Vehicle = () => {
       <div className="container">
         <div className="text text-center pb-32 w-full">
             <h1 className='text-[25px] md:text-[35px] font-bold'>Discover the Perfect Car Rental Models</h1>
-            <p className='text-[15px] text-[#706f7b] py-10'>"Discover the convenience and flexibility of car rentals with our diverse selection of models. Whether you're planning a weekend getaway, a business trip, or simply need a temporary ride, our extensive collection caters to all preferences and needs."</p>
+            <p className='text-[15px] text-[#706f7b] py-10 mx-auto max-w-[100rem]'>"Discover the convenience and flexibility of car rentals with our diverse selection of models. Whether you're planning a weekend getaway, a business trip, or simply need a temporary ride, our extensive collection caters to all preferences and needs."</p>
         </div>
         <div className="cards grid md:grid-cols-2 xl:grid-cols-3 mx-auto grid-rows-[auto] gap-[3rem] text-center w-fit xl:w-[110rem] items-center">
 

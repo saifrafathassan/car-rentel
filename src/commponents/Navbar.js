@@ -39,7 +39,7 @@ const scrollToTop = () => {
 
   return (
     <nav className=''>
-      <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-[300px]'>
+      <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-auto'>
       <div className="logo">
         <img src={Logo} alt="logo" className="h-20 w-42"/>
       </div>
@@ -62,7 +62,7 @@ const scrollToTop = () => {
       </div>
 
       {/* moblie menu */}
-      <div className='lg:hidden px-8 py-3'>
+      <div className='lg:hidden px-5 py-3'>
       <div className='flex justify-between items-center pt-7 w-full'>
         {/* Logo on the left */}
         <div className="logo">
