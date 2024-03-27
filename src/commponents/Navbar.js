@@ -48,9 +48,9 @@ const scrollToTop = () => {
         <ul className='flex space-x-7'>
           <li><Link to='/' className='link'>Home</Link></li>
           <li><Link to='/about' className='link'>About</Link></li>
-          <li><Link to='/vehicle models' className='link'>Vehicle Models</Link></li>
+          <li><Link to='/vehiclemodels' className='link'>Vehicle Models</Link></li>
           <li><Link to='/testimonials' className='link'>Testimonials</Link></li>
-          <li><Link to='/our team' className='link'>Our Team</Link></li>
+          <li><Link to='/ourteam' className='link'>Our Team</Link></li>
           <li><Link to='/contact' className='link'>Contact</Link></li>
         </ul>
       </div>
@@ -81,11 +81,11 @@ const scrollToTop = () => {
         {/* Mobile menu */}
         <ul className={openNav ? 'moblie active' : 'moblie'}>
           <li><Link to='/' className='link'>Home</Link></li>
-          <li><Link to='/' className='link'>About</Link></li>
-          <li><Link to='/' className='link'>Vehicle Models</Link></li>
-          <li><Link to='/' className='link'>Testimonials</Link></li>
-          <li><Link to='/' className='link'>Our Team</Link></li>
-          <li><Link to='/' className='link'>Contact</Link></li>
+          <li><Link to='/about' className='link'>About</Link></li>
+          <li><Link to='/vehiclemodels' className='link'>Vehicle Models</Link></li>
+          <li><Link to='/testimonials' className='link'>Testimonials</Link></li>
+          <li><Link to='/ourteam' className='link'>Our Team</Link></li>
+          <li><Link to='/contact' className='link'>Contact</Link></li>
         </ul>
       </div>
     </div>

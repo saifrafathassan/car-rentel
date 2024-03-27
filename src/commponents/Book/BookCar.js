@@ -213,7 +213,7 @@ const BookCar = () => {
                 </div>
 
                 <div className="box-form__car-type">
-                  <label cl>
+                  <label cl="true">
                     <FaMapMarkerAlt className="input-icon" /> &nbsp; Drop-of{" "}
                     <b>*</b>
                   </label>
