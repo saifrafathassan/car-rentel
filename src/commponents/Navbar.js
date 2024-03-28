@@ -35,7 +35,7 @@ const scrollToTop = () => {
 
     if (currentScroll > 0) {
       window.requestAnimationFrame(scrollToTopAnimation);
-      window.scrollTo(0, currentScroll - currentScroll / 8);
+      window.scrollTo(0, currentScroll - currentScroll / 12);
     }
   };
 
