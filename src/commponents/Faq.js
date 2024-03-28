@@ -21,13 +21,13 @@ const Faq = () => {
         <div className="text flex flex-col justify-center items-center">
           <h2 className='text-[22px] font-bold'>FAQ</h2>
           <h1 className='text-[30px] text-center md:text-[42px] font-bold font-[Poppins, sans-serif] my-5'>Frequently Asked Questions</h1>
-          <p className='text-[16px] text-[#706f7b] md:w-[750px] text-center'>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.</p>
+          <p className='text-[16px] text-[#706f7b] md:w-[750px] text-center pb-12 px-5'>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.</p>
         </div>
 
     <div className="faq flex flex-col justify-center items-center my-20">
 
-      <div onClick={() => handleClick(1)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer border-b-2">
-        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 1 ? 'bg-main text-white' : ''}`}>
+      <div onClick={() => handleClick(1)} className="q1 bg-white w-full md:max-w-fit shadow-xl  flex flex-col justify-between items-center cursor-pointer border-b-2">
+        <div className={`flex justify-between items-center md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 1 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>1.What is special about comparing rental car deals? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
@@ -42,8 +42,8 @@ const Faq = () => {
           </div>
       </div>
 
-      <div onClick={() => handleClick(2)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer border-b-2">
-        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
+      <div onClick={() => handleClick(2)} className="q2 bg-white shadow-xl w-full md:max-w-fit flex flex-col justify-between items-center cursor-pointer border-b-2">
+        <div className={`flex justify-between items-center md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>2.How do I find the car rental deals? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
@@ -59,8 +59,8 @@ const Faq = () => {
           </div>
       </div>
 
-      <div onClick={() => handleClick(3)} className="q1 bg-white shadow-xl  flex flex-col justify-between items-center cursor-pointer ">
-        <div className={`flex justify-between items-center w-[35rem] sm:w-[50rem] md:w-[80rem] py-[8px] px-[22px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 3 ? 'bg-main text-white' : ''}`}>
+      <div onClick={() => handleClick(3)} className="q3 bg-white shadow-xl flex w-full md:max-w-fit flex-col justify-between items-center cursor-pointer ">
+        <div className={`flex justify-between items-center md:w-[80rem] py-[8px] px-[22px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 3 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>3.How do I find such low rental car prices? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>

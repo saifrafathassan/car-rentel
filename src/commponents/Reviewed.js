@@ -12,7 +12,7 @@ const Reviewed = () => {
         <p className='text-[#706f7b] text-[16px] md:w-[700px] text-center px-5'>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
       </div>
 
-      <div className="cards flex-wrap flex justify-center pt-32 gap-20">
+      <div className="cards flex-wrap flex justify-center items-center mr-5 pt-32 gap-20">
         <div className="card-1 p-20 sm:px-[100px] sm:py-[40px] bg-[#fff] shadow-xl ml-5">
             <p className='text-[22px] sm:w-[400px] font-[500]'>"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "</p>
             <div className='flex justify-between items-center pt-7'>

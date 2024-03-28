@@ -9,7 +9,7 @@ const Aboutcontent = () => {
   return (
     <section className='w-full h-full bg-[#fff] py-[150px]'>
 
-      <div className='flex flex-col items-center pb-44'>
+      <div className='flex flex-col items-center pb-44 px-5'>
         <img src={Logo} alt="logo" className='w-[250px] border-b-2 border-main px-12 pb-8' />
         <p className='text-[16px] text-[#777] max-w-[900px] text-center py-14'>"Welcome to Car Rental! We're here to make your journey hassle-free and enjoyable. With our diverse range of vehicles and dedication to customer satisfaction, we ensure a seamless rental experience. Whether for business or pleasure, trust Car Rental to meet your transportation needs with excellence."</p>
       </div>
