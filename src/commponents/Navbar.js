@@ -30,14 +30,11 @@ return () => {
 }, []);
 
 const scrollToTop = () => {
-  const scrollStep = -window.pageYOffset / (500 / 15); // 500 milliseconds to scroll to top
-  const scrollInterval = setInterval(() => {
-    if (window.pageYOffset !== 0) {
-      window.scrollBy(0, scrollStep);
-    } else {
-      clearInterval(scrollInterval);
-    }
-  }, 15); // 15 milliseconds interval for smooth scrolling
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8); 
+  }
 };
 
 
