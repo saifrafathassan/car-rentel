@@ -4,11 +4,11 @@ import Looding from '../assets/Rolling-1s-44px.svg'
 
 
 const Vehiclemodels = () => {
-  const [activeCar, setActiveCar] = useState(data[0]); // Initialize active car
+  const [activeCar, setActiveCar] = useState(data[0]); 
   const [isLoading, setIsLoading] = useState(false);
   const [active, setActive] = useState(1)
 
-  // Function to handle button click and update active car
+  
   const handleButtonClick = (id) => {
     setIsLoading(true); 
     setActive(id)
@@ -18,7 +18,7 @@ const Vehiclemodels = () => {
       const clickedCar = data.find((car) => car.id === id);
       setActiveCar(clickedCar);
       setIsLoading(false); 
-    }, 400); 
+    }, 450); 
   };
 
   return (
@@ -40,7 +40,7 @@ const Vehiclemodels = () => {
 
         <div className="img h-[450px] pt-32 w-[500px]">
         {isLoading ? (
-          <img className='mx-auto max-w-[500] max-h-[450px] pt-32' src={Looding} alt="looding" /> 
+          <img className='mx-auto w-[500] h-[150px] pt-32' src={Looding} alt="looding" /> 
         ) : (
           <img className='w-full h-full object-contain' src={activeCar.image} alt="car" />
         )}
