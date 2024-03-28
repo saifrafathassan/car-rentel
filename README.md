@@ -6,11 +6,11 @@
 
 <p>Credits for the design goes to <a href='https://xpeedstudio.com/'>XpeedStudio</a></p>
 
-👉 Live Demo: <a href='https://car-rental-ten.vercel.app/'>Live Demo</a>
+👉 Live Demo: <a href='https://car-rental-react-webstie.netlify.app/'>Live Demo</a>
 
 <h3>Build with:</h3>
 
-» Sass / Scss <br>
+» Tailwind.Css <br>
 » React JS
 
 <h2>Screenshots of the Project 📸</h2>

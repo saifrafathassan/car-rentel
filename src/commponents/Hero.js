@@ -18,7 +18,7 @@ const Hero = () => {
     <div className='h-screen ml-10 pb-24 overflow-hidden font-bold pt-32'>
       <img src={Bg} alt="hero" className='hidden lg:block absolute top-0 right-0 z-[-1]'/>
       <div className='flex justify-center items-center h-full mx-auto lg:w-[1350px]'>
-        <div className="lg:text-start w-[500px] text-center lg:w-[600px]">
+        <div className="lg:text-start w-[500px] text-center lg:w-[600px] mr-10">
             <h4 className='text-4xl pb-7'>Plan your trip now</h4>
             <h1 className='text-[35px] sm:text-[60px] md:leading-[70px] pb-2'>Save <span className='text-main'>big</span> with our car rental</h1>
             <p className='text-[#847e7e] font-sans font-bold leading-10 py-6 text-[15px]'>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>

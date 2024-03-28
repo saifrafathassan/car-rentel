@@ -228,7 +228,7 @@ const BookCar = () => {
                 </div>
 
                 <div className="box-form__car-time">
-                  <label htmlFor="picktime">
+                  <label className='w-full' htmlFor="picktime">
                     <FcCalendar className="input-icon" /> &nbsp; Pick-up{" "}
                     <b>*</b>
                   </label>
@@ -241,7 +241,7 @@ const BookCar = () => {
                 </div>
 
                 <div className="box-form__car-time">
-                  <label htmlFor="droptime">
+                  <label className='w-full' htmlFor="droptime">
                     <FcCalendar className="input-icon" /> &nbsp; Drop-of{" "}
                     <b>*</b>
                   </label>
