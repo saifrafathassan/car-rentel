@@ -32,7 +32,7 @@ const Faq = () => {
           <span><BiChevronDown size={30}/></span>
         </div>
         <div className={`div ${activeText === 1 ? 'show' : 'div'}`}>
-            <p className='text-[#706f7b] text-[15px] w-[30rem] sm:w-[50rem] md:w-[80rem] py-4 px-6 sm:py-[2.8rem] sm:px-[4.5rem]'>Comparing rental car deals is important as it helps find the
+            <p className='text-[#706f7b] text-[15px] w-[32rem] sm:w-[50rem] md:w-[80rem] py-4 sm:py-[2.8rem] sm:px-[4.5rem]'>Comparing rental car deals is important as it helps find the
                   best deal that fits your budget and requirements, ensuring you
                   get the most value for your money. By comparing various
                   options, you can find deals that offer lower prices,
@@ -48,7 +48,7 @@ const Faq = () => {
           <span><BiChevronDown size={30}/></span>
         </div>
         <div className={`div ${activeText === 2 ? 'show' : 'div'}`}>
-            <p className='text-[#706f7b] text-[15px] w-[30rem] sm:w-[50rem] md:w-[80rem] py-4 px-6 sm:py-[2.8rem] sm:px-[4.5rem]'>
+            <p className='text-[#706f7b] text-[15px] w-[32rem] sm:w-[50rem] md:w-[80rem] py-4 sm:py-[2.8rem] sm:px-[4.5rem]'>
               You can find car rental deals by researching online and
                   comparing prices from different rental companies. Websites
                   such as Expedia, Kayak, and Travelocity allow you to compare
@@ -65,7 +65,7 @@ const Faq = () => {
           <span><BiChevronDown size={30}/></span>
         </div>
         <div className={`div ${activeText === 3 ? 'show' : 'div'}`}>
-            <p className='text-[#706f7b] text-[15px] w-[30rem] sm:w-[50rem] md:w-[80rem] py-4 px-0 sm:py-[2.8rem] sm:px-[4.5rem]'>
+            <p className='text-[#706f7b] text-[15px] w-[32rem] sm:w-[50rem] md:w-[80rem] py-4 sm:py-[2.8rem] sm:px-[4.5rem]'>
             Book in advance: Booking your rental car ahead of time can
                   often result in lower prices. Compare prices from multiple
                   companies: Use websites like Kayak, Expedia, or Travelocity to
