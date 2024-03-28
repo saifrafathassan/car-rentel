@@ -7,27 +7,27 @@ import { FaBars, FaTimes} from 'react-icons/fa'
 import { IoIosArrowUp} from 'react-icons/io'
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
-  const [showButton, setShowButton] = useState(false);
-  const handleClick = ()=> setClick(!click)
+const [openNav, setOpenNav] = useState(false)
+const [showButton, setShowButton] = useState(false);
+const handleClick = ()=> setOpenNav(!openNav)
+
+useEffect(() => {
+    const showThreshold = 500; 
+    const hideThreshold = 400;
+
+    const handleScroll = _.throttle(() => {
+      if (window.scrollY > showThreshold) {
+        setShowButton(true);
+      } else if (window.scrollY < hideThreshold) {
+        setShowButton(false);
+      }
+    }, 1000);
   
-  useEffect(() => {
-      const showThreshold = 500; 
-      const hideThreshold = 400;
-  
-      const handleScroll = _.throttle(() => {
-        if (window.scrollY > showThreshold) {
-          setShowButton(true);
-        } else if (window.scrollY < hideThreshold) {
-          setShowButton(false);
-        }
-      }, 1000);
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
 const scrollToTop = () => {
   window.scrollTo({
