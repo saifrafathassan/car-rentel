@@ -41,7 +41,7 @@ const scrollToTop = () => {
     <nav className=''>
       <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-auto'>
       <div className="logo">
-        <img src={Logo} alt="logo" className="h-20 w-42"/>
+        <Link to="/"><img src={Logo} alt="logo" className="h-20 w-42"/></Link>
       </div>
       
       <div className="links">

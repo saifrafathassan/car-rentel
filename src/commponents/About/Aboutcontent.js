@@ -1,5 +1,6 @@
 import React from 'react'
 import Aimg from '../../assets/about-main.jpg'
+import Logo from '../../assets/logo.png'
 import Icon1 from '../../assets/icon1.png'
 import Icon2 from '../../assets/icon2.png'
 import Icon3 from '../../assets/icon3.png'
@@ -7,6 +8,12 @@ import Icon3 from '../../assets/icon3.png'
 const Aboutcontent = () => {
   return (
     <section className='w-full h-full bg-[#fff] py-[150px]'>
+
+      <div className='flex flex-col items-center pb-44'>
+        <img src={Logo} alt="logo" className='w-[250px] border-b-2 border-main px-12 pb-8' />
+        <p className='text-[16px] text-[#777] max-w-[900px] text-center py-14'>"Welcome to Car Rental! We're here to make your journey hassle-free and enjoyable. With our diverse range of vehicles and dedication to customer satisfaction, we ensure a seamless rental experience. Whether for business or pleasure, trust Car Rental to meet your transportation needs with excellence."</p>
+      </div>
+
       <div className="content flex justify-center gap-20 flex-wrap">
         <div className="col-1 pt-16">
             <img src={Aimg} alt="aboutimg" />

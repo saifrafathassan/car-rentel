@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function  Hero2 ({ name }) {
+function  Hero2 ({ name, Carbg}) {
   return (
     <>
-      <section className="hero-pages">
+      <section className="hero-pages" style={{backgroundImage: `url(${Carbg})`}}>
         <div className="hero-pages__overlay"></div>
         <div className="container">
           <div className="hero-pages__text">

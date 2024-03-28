@@ -22,6 +22,20 @@
     padding: 0;
   }
 
+  .contact-div {
+    background-image: url(/src/assets/bg-contact.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #010103;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+    grid-gap: 3rem;
+  }
+
   .download-section {
     background-image: url('/src/assets/bg02.png');
     background-position: top;
@@ -186,7 +200,6 @@
 }
 
 .hero-pages {
-  background-image: url(/src/assets/heroes-bg.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,7 +208,7 @@
   width: 100%;
 }
 .hero-pages__overlay {
-  background-color: hsla(0, 0%, 100%, .92);
+  background-color: hsla(0, 0%, 90%, .85);
   height: 100%;
   position: absolute;
   right: 0;
