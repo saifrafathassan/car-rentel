@@ -1,24 +1,38 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import {data} from './Data/Data'
 import Looding from '../assets/Rolling-1s-44px.svg'
 
 
 const Vehiclemodels = () => {
-  const [activeCar, setActiveCar] = useState(data[0]); 
-  const [isLoading, setIsLoading] = useState(false);
-  const [active, setActive] = useState(1)
+  const [activeCar, setActiveCar] = useState(data[0]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [active, setActive] = useState(1);
 
-  
+  useEffect(() => {
+    const preloadImages = () => {
+      const images = data.map((car) => new Image());
+      images.forEach((image, index) => {
+        image.onload = () => {
+          if (index === data.length - 1) {
+            setIsLoading(false);
+          }
+        };
+        image.src = data[index].image;
+      });
+    };
+
+    preloadImages();
+  }, []);
+
   const handleButtonClick = (id) => {
-    setIsLoading(true); 
-    setActive(id)
+    setIsLoading(true);
+    setActive(id);
 
-    
     setTimeout(() => {
       const clickedCar = data.find((car) => car.id === id);
       setActiveCar(clickedCar);
-      setIsLoading(false); 
-    }, 450); 
+      setIsLoading(false);
+    }, 450);
   };
 
   return (
