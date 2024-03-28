@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../assets/logo.png'
 import _ from 'lodash';
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom' //useLocation add soon
+import { Link } from 'react-router-dom' 
 import { FaBars, FaTimes} from 'react-icons/fa'
 import { IoIosArrowUp} from 'react-icons/io'
 
@@ -30,10 +30,11 @@ return () => {
 }, []);
 
 const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8); 
+  }
 };
 
 
@@ -62,8 +63,8 @@ const scrollToTop = () => {
       </div>
 
       {/* moblie menu */}
-      <div className='lg:hidden px-5 py-3'>
-      <div className='flex justify-between items-center pt-7 w-full'>
+      <div className='lg:hidden px-5 py-3 moblie-nav'>
+      <div className='flex justify-between z-[99] items-center pt-7 w-full'>
         {/* Logo on the left */}
         <div className="logo">
           <img src={Logo} alt="logo" className="h-[50px] w-[150px]"/>

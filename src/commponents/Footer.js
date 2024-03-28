@@ -18,7 +18,7 @@ const Footer = () => {
             <MdOutlineEmail size={25}/>
             <Link>carrental@gmail.com</Link>
           </div>
-          <Link className='text-[14px] hover:text-main transition-colors duration-300'>Design by XpeedStudio</Link>
+          <Link to="https://xpeedstudio.com/" target="_blank" rel="noopener noreferrer" className='text-[14px] hover:text-main transition-colors duration-300'>Design by XpeedStudio</Link>
         </div>
 
         <div className="col-2 w-[300px]">
