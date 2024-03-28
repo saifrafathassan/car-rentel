@@ -25,7 +25,7 @@ const Vehiclemodels = () => {
     <div className='bg-[#fff] pt-32 flex flex-col items-center'>
       <h2 className='text-4xl font-[750]'>Vehicle Models</h2>
       <h1 className='text-[35px] md:text-[45px] font-[750] py-4'>Our rental fleet</h1>
-      <p className='text-[#706f7b] text-[17px] max-w-[600px] text-center'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
+      <p className='text-[#706f7b] text-[17px] max-w-[400px] sm:max-w-[600px] text-center'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
 
       <div className="w-full pickcar py-14 justify-center gap-10 xl:gap-[120px] flex flex-wrap">
 
