@@ -122,13 +122,13 @@
 .book-content__box .box-form__car-time {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .book-content__box .box-form__car-time input {
   outline: none;
   color: #878585;
   padding-right: 3rem;
+  width: 100%;
   border: 1px solid #ccd7e6;
   font-size: 12px;
 }
