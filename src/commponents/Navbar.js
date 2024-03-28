@@ -30,11 +30,16 @@ return () => {
 }, []);
 
 const scrollToTop = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
-    window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, c - c / 8); 
-  }
+  const scrollToTopAnimation = () => {
+    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(scrollToTopAnimation);
+      window.scrollTo(0, currentScroll - currentScroll / 8);
+    }
+  };
+
+  scrollToTopAnimation();
 };
 
 
