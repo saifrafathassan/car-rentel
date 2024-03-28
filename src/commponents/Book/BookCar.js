@@ -232,7 +232,7 @@ const BookCar = () => {
                     <FcCalendar className="input-icon" /> &nbsp; Pick-up{" "}
                     <b>*</b>
                   </label>
-                  <input className='py-[1.2rem]'
+                  <input className='py-[1rem] sm:py-0'
                     id="picktime"
                     value={pickTime}
                     onChange={handlePickTime}
@@ -245,7 +245,7 @@ const BookCar = () => {
                     <FcCalendar className="input-icon" /> &nbsp; Drop-of{" "}
                     <b>*</b>
                   </label>
-                  <input className='py-[1.2rem]'
+                  <input className='py-[1rem] sm:py-0'
                     id="droptime"
                     value={dropTime}
                     onChange={handleDropTime}
