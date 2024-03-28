@@ -23,7 +23,7 @@
   }
 
   .contact-div {
-    background-image: url(/src/assets/bg-contact.png);
+    background-image: url('/src/assets/bg-contact.png');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: auto;
@@ -63,7 +63,7 @@
   }
   .bg-img {
     background-color: #fff;
-    background-image: url(./assets/bg.png);
+    background-image: url('./assets/bg.png');
     background-position: -225px 255px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,7 +86,7 @@
   }
 
   .book-banner {
-    background-image: url(/src/assets/book-banner.png);
+    background-image: url('/src/assets/book-banner.png');
     display: flex;
     height: 20rem;
     position: relative;
