@@ -7,39 +7,33 @@ import { FaBars, FaTimes} from 'react-icons/fa'
 import { IoIosArrowUp} from 'react-icons/io'
 
 const Navbar = () => {
-const [openNav, setOpenNav] = useState(false)
-const [showButton, setShowButton] = useState(false);
-const handleClick = ()=> setOpenNav(!openNav)
-
-useEffect(() => {
-  const showThreshold = 500; 
-  const hideThreshold = 400;
-
-  const handleScroll = _.throttle(() => {
-    if (window.scrollY > showThreshold) {
-      setShowButton(true);
-    } else if (window.scrollY < hideThreshold) {
-      setShowButton(false);
-    }
-  }, 1000);
-
-window.addEventListener('scroll', handleScroll);
-return () => {
-  window.removeEventListener('scroll', handleScroll);
-};
-}, []);
+  const [click, setClick] = useState(false)
+  const [showButton, setShowButton] = useState(false);
+  const handleClick = ()=> setClick(!click)
+  
+  useEffect(() => {
+      const showThreshold = 500; 
+      const hideThreshold = 400;
+  
+      const handleScroll = _.throttle(() => {
+        if (window.scrollY > showThreshold) {
+          setShowButton(true);
+        } else if (window.scrollY < hideThreshold) {
+          setShowButton(false);
+        }
+      }, 1000);
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
 const scrollToTop = () => {
-  const scrollToTopAnimation = () => {
-    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-
-    if (currentScroll > 0) {
-      window.requestAnimationFrame(scrollToTopAnimation);
-      window.scrollTo(0, currentScroll - currentScroll / 12);
-    }
-  };
-
-  scrollToTopAnimation();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 };
 
 
