@@ -41,7 +41,7 @@ const Vehiclemodels = () => {
       <h1 className='text-[35px] md:text-[45px] font-[750] py-4'>Our rental fleet</h1>
       <p className='text-[#706f7b] text-[17px] max-w-[400px] sm:max-w-[600px] text-center'>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
 
-      <div className="w-full pickcar py-14 justify-center gap-10 xl:gap-[120px] flex flex-wrap">
+      <div className="w-full pickcar py-14 justify-center md:gap-[120px] flex flex-wrap">
 
         <div className="bottons flex flex-col gap-3">
           <button key={1} onClick={() => handleButtonClick(1)} className={`py-[1.5rem] px-[2.5rem] bg-[#e9e9e9] text-left text-[2rem] font-bold hover:text-white hover:bg-main duration-200 ${active === 1 ? 'btnactive' : ''}`}>Audi A1 S-Line</button>

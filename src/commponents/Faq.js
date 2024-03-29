@@ -43,7 +43,7 @@ const Faq = () => {
       </div>
 
       <div onClick={() => handleClick(2)} className="q2 bg-white shadow-xl w-full md:max-w-fit flex flex-col justify-between items-center cursor-pointer border-b-2">
-        <div className={`flex justify-between items-center md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
+        <div className={`flex justify-between items-center w-full md:w-[80rem] py-[8px] px-[20px] md:py-[18px] md:px-[45px] transition duration-300 ${activeText === 2 ? 'bg-main text-white' : ''}`}>
           <h2 className='text-[15px] sm:text-[18px]'>2.How do I find the car rental deals? </h2>
           <span><BiChevronDown size={30}/></span>
         </div>
