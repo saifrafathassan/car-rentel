@@ -9,18 +9,24 @@ const Vehiclemodels = () => {
   const [active, setActive] = useState(1);
 
   useEffect(() => {
-    const preloadImages = () => {
-      const images = data.map((car) => new Image());
-      images.forEach((image, index) => {
-        image.onload = () => {
-          if (index === data.length - 1) {
-            setIsLoading(false);
-          }
-        };
-        image.src = data[index].image;
+    const preloadImages = async () => {
+      const promises = data.map((car) => {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve();
+          image.onerror = reject;
+          image.src = car.image;
+        });
       });
+  
+      try {
+        await Promise.all(promises);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Failed to preload images:', error);
+      }
     };
-
+  
     preloadImages();
   }, []);
 
@@ -32,7 +38,7 @@ const Vehiclemodels = () => {
       const clickedCar = data.find((car) => car.id === id);
       setActiveCar(clickedCar);
       setIsLoading(false);
-    }, 450);
+    }, 350);
   };
 
   return (
@@ -54,9 +60,9 @@ const Vehiclemodels = () => {
 
         <div className="img h-[450px] pt-32 w-[500px]">
         {isLoading ? (
-          <img className='mx-auto w-[500] h-[150px] pt-32' src={Looding} alt="looding" /> 
+          <img className='mx-auto w-full h-[130px] pt-32' src={Looding} alt="looding" /> 
         ) : (
-          <img className='w-full h-full object-contain' src={activeCar.image} alt="car" />
+          <img className='w-full h-full object-contain' src={activeCar.image} alt="carimage" />
         )}
         </div>
 
