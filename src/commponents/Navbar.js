@@ -21,12 +21,12 @@ useEffect(() => {
   });
 }, []);
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-  console.log('Scrolled to top')
+const scrollTo = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollTo);
+    window.scrollTo(0, c - c / 8); 
+  }
 };
 
   return (
@@ -82,7 +82,7 @@ const scrollToTop = () => {
       </div>
     </div>
     {showButton && (
-        <button className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1000] hover:bg-red-600 duration-300' onClick={scrollToTop}>
+        <button className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1000] hover:bg-red-600 duration-300' onClick={scrollTo}>
           <IoIosArrowUp color='white' size={30}/>
         </button>
       )}
