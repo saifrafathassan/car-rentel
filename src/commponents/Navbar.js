@@ -30,6 +30,11 @@ const scrollTo = () => {
 
   return (
     <nav className=''>
+          {showButton && (
+        <button className='bg-main flex justify-center items-center rounded-xl h-[55px] w-[55px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[99999] hover:bg-red-600 duration-300' onClick={scrollTo}>
+          <IoIosArrowUp color='white' size={30}/>
+        </button>
+      )}
       <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-auto'>
       <div className="logo">
         <Link to="/"><img src={Logo} alt="logo" className="h-20 w-42"/></Link>
@@ -80,11 +85,6 @@ const scrollTo = () => {
         </ul>
       </div>
     </div>
-    {showButton && (
-        <button className='bg-main flex justify-center items-center rounded-xl h-[55px] w-[55px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[99999] hover:bg-red-600 duration-300' onClick={scrollTo}>
-          <IoIosArrowUp color='white' size={30}/>
-        </button>
-      )}
     </nav>
   )
 }
