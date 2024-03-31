@@ -1,6 +1,5 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
-import _ from 'lodash';
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom' 
 import { FaBars, FaTimes} from 'react-icons/fa'
@@ -12,30 +11,22 @@ const [showButton, setShowButton] = useState(false);
 const handleClick = ()=> setOpenNav(!openNav)
 
 useEffect(() => {
-    const showThreshold = 500; 
-    const hideThreshold = 400;
-
-    const handleScroll = _.throttle(() => {
-      if (window.scrollY > showThreshold) {
-        setShowButton(true);
-      } else if (window.scrollY < hideThreshold) {
-        setShowButton(false);
-      }
-    }, 1000);
-  
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 500) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  });
 }, []);
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
+const scrollTo = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollTo);
+    window.scrollTo(0, c - c / 8); 
+  }
 };
-
 
   return (
     <nav className=''>
@@ -90,8 +81,8 @@ const scrollToTop = () => {
       </div>
     </div>
     {showButton && (
-        <button className='bg-main flex justify-center items-center h-[60px] w-[60px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1299] hover:bg-red-600 duration-300' onClick={scrollToTop}>
-          <IoIosArrowUp color='white' size={25}/>
+        <button className='bg-main flex justify-center items-center rounded-xl h-[55px] w-[55px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[99999] hover:bg-red-600 duration-300' onClick={scrollTo}>
+          <IoIosArrowUp color='white' size={30}/>
         </button>
       )}
     </nav>
