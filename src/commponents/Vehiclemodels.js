@@ -60,7 +60,7 @@ const Vehiclemodels = () => {
 
         <div className="img h-[450px] pt-32 w-[500px]">
         {isLoading ? (
-          <img className='mx-auto w-full h-[130px] pt-32' src={Looding} alt="looding" /> 
+          <img className='mx-auto w-[500px] object-contain h-[130px] pt-32' src={Looding} alt="looding" /> 
         ) : (
           <img className='w-full h-full object-contain' src={activeCar.image} alt="carimage" />
         )}
