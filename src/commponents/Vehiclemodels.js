@@ -58,9 +58,11 @@ const Vehiclemodels = () => {
           <button key={6} onClick={() => handleButtonClick(6)} className={`py-[1.5rem] px-[2.5rem] bg-[#e9e9e9] text-left text-[2rem] font-bold hover:text-white hover:bg-main duration-200 ${active === 6 ? 'btnactive' : ''}`}>VW Passat CC</button>
         </div>
 
-        <div className="img h-[450px] pt-32 w-[500px]">
+        <div className="h-[450px] pt-32 w-[500px] relative">
         {isLoading ? (
-          <img className='mx-auto w-[500px] object-contain h-[130px] pt-32' src={Looding} alt="looding" /> 
+           <div className='absolute inset-0 flex items-center justify-center'>
+           <img className='w-[44px] h-[44px]' src={Looding} alt='loading' />
+         </div>
         ) : (
           <img className='w-full h-full object-contain' src={activeCar.image} alt="carimage" />
         )}
