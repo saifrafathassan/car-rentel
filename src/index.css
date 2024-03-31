@@ -48,7 +48,6 @@
 
   .div {
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.5s ease-in-out;
    }
    .show {
@@ -71,7 +70,6 @@
   }
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
   }
   
   .container {

@@ -353,7 +353,6 @@ const BookCar = () => {
                   type="text"
                   placeholder="Enter your first name"
                 ></input>
-                <p className="error-modal">This field is required.</p>
               </span>
 
               <span>
@@ -366,7 +365,7 @@ const BookCar = () => {
                   type="text"
                   placeholder="Enter your last name"
                 ></input>
-                <p className="error-modal ">This field is required.</p>
+
               </span>
 
               <span>
@@ -379,7 +378,7 @@ const BookCar = () => {
                   type="tel"
                   placeholder="Enter your phone number"
                 ></input>
-                <p className="error-modal">This field is required.</p>
+
               </span>
 
               <span>
@@ -392,7 +391,7 @@ const BookCar = () => {
                   type="number"
                   placeholder="18"
                 ></input>
-                <p className="error-modal ">This field is required.</p>
+
               </span>
             </div>
 
@@ -407,7 +406,7 @@ const BookCar = () => {
                   type="email"
                   placeholder="Enter your email address"
                 ></input>
-                <p className="error-modal">This field is required.</p>
+
               </span>
 
               <span>
@@ -420,7 +419,7 @@ const BookCar = () => {
                   type="text"
                   placeholder="Enter your street address"
                 ></input>
-                <p className="error-modal ">This field is required.</p>
+
               </span>
             </div>
 
@@ -435,7 +434,7 @@ const BookCar = () => {
                   type="text"
                   placeholder="Enter your city"
                 ></input>
-                <p className="error-modal">This field is required.</p>
+
               </span>
 
               <span>
@@ -448,7 +447,7 @@ const BookCar = () => {
                   type="text"
                   placeholder="Enter your zip code"
                 ></input>
-                <p className="error-modal ">This field is required.</p>
+
               </span>
             </div>
 

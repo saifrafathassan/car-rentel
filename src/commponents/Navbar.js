@@ -8,6 +8,7 @@ import { IoIosArrowUp} from 'react-icons/io'
 const Navbar = () => {
 const [openNav, setOpenNav] = useState(false)
 const [showButton, setShowButton] = useState(false);
+
 const handleClick = ()=> setOpenNav(!openNav)
 
 useEffect(() => {
@@ -20,21 +21,16 @@ useEffect(() => {
   });
 }, []);
 
-const scrollTo = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
-    window.requestAnimationFrame(scrollTo);
-    window.scrollTo(0, c - c / 8); 
-  }
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+  console.log('Scrolled to top')
 };
 
   return (
-    <nav className=''>
-          {showButton && (
-        <button className='bg-main flex justify-center items-center rounded-xl h-[55px] w-[55px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[99999] hover:bg-red-600 duration-300' onClick={scrollTo}>
-          <IoIosArrowUp color='white' size={30}/>
-        </button>
-      )}
+    <nav>
       <div className='navbar hidden lg:flex justify-between items-center pt-10 mx-auto'>
       <div className="logo">
         <Link to="/"><img src={Logo} alt="logo" className="h-20 w-42"/></Link>
@@ -85,6 +81,11 @@ const scrollTo = () => {
         </ul>
       </div>
     </div>
+    {showButton && (
+        <button className='bg-main flex justify-center items-center rounded-full h-[50px] w-[50px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1000] hover:bg-red-600 duration-300' onClick={scrollToTop}>
+          <IoIosArrowUp color='white' size={30}/>
+        </button>
+      )}
     </nav>
   )
 }
